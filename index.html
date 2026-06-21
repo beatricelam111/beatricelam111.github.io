@@ -361,6 +361,15 @@
                 </span>
 
                 <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-scroll"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
                   <a href="https://github.com/beatricelam111/EndoX" target="_blank" class="external-link button is-normal is-rounded is-dark" rel="noreferrer">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -414,7 +423,7 @@
         <p>We propose <strong>EndoX</strong>, a GPU-accelerated synthetic data generation framework and high-fidelity simulator for medical endoscopy that:</p>
         <ul>
           <li><strong>Automates anatomically accurate 3D mesh generation</strong> from CT data across diverse patient anatomies.</li>
-          <li>Employs <strong>physically-based rendering (PBR)</strong> for optically accurate <strong>multimodal imagery with configurable sensor, lighting, material, and trajectory parameters.</strong> </li>
+          <li>Employs <strong>physically-based rendering (PBR)</strong> for optically accurate multimodal imagery with <strong>configurable sensor, lighting, material, and trajectory parameters.</strong> </li>
           <li>Is designed for <strong>scalable deployment for high-throughput data production</strong> with the containerized headless version to be publicly released upon acceptance.</li>
         </ul>
       </div>
@@ -552,11 +561,12 @@
         </div>
       </div>
 
-      <pre class="file-tree" style="margin-top:1rem;"><code>EndoX_dataset/
+      <h3 class="title is-5" style="margin-top:1.5rem;">Structure</h3>
+      <div class="content">
+        <pre class="file-tree"><code>EndoX_dataset/
 ├── colon/
 │   ├── trajectory_1/
 │   │   ├── colon.obj
-│   │   ├── colon.usd
 │   │   ├── coverage_map/
 │   │   ├── rgb/
 │   │   │   ├── 0000.png
@@ -575,9 +585,41 @@
     │   └── ...
     └── trajectory_2/
         └── ...</code></pre>
-      <p style="margin-top:1rem;">
-        <a href="https://github.com/beatricelam111/EndoX" target="_blank" rel="noreferrer"><strong>Download the sample dataset on GitHub &rarr;</strong></a>
-      </p>
+        <table class="table is-fullwidth is-striped" style="margin-top:1rem;">
+          <thead>
+            <tr>
+              <th>Organ</th>
+              <th>Sequence</th>
+              <th># Frames</th>
+              <th>Modalities</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Small intestine</td>
+              <td>A</td>
+              <td>Placeholder</td>
+              <td>RGB, depth, normals, optical flow, occlusion, pose, coverage</td>
+              <td><a href="#">Sample zip</a></td>
+            </tr>
+            <tr>
+              <td>Small intestine</td>
+              <td>B</td>
+              <td>Placeholder</td>
+              <td>RGB, depth, normals, optical flow, occlusion, pose, coverage</td>
+              <td><a href="#">Sample zip</a></td>
+            </tr>
+            <tr>
+              <td>Small intestine</td>
+              <td>C</td>
+              <td>Placeholder</td>
+              <td>RGB, depth, normals, optical flow, occlusion, pose, coverage</td>
+              <td><a href="#">Sample zip</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
